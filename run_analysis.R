@@ -36,4 +36,4 @@ melted<-melt(allData, id.vars=c("activityLabel"))
 summarizedData <- ddply(melted, .(activityLabel, variable), summarize, mean=mean(value))
 
 # write CSV file
-write.csv(summarizedData, file="tidy_data_set.csv")
+write.csv(summarizedData, file="tidy_data_set.txt")
